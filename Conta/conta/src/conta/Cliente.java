@@ -1,7 +1,7 @@
 package conta;
 
 public class Cliente {
-	String nome;
+	public String nome;
 	String sobrenome;
 	String cpf;
 }

@@ -1,4 +1,7 @@
-package conta;
+package testes;
+
+import conta.Cliente;
+import conta.Conta;
 
 public class TestaCliente {
 

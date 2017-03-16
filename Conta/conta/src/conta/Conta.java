@@ -2,12 +2,12 @@ package conta;
 
 public class Conta {
 	
-	int numero;
-	String dono;
-	double saldo;
-	double limite;
-	double salario;
-	Cliente titular;
+	public int numero;
+	public String dono;
+	public double saldo;
+	public double limite;
+	public double salario;
+	public Cliente titular;
 	// ao instanciar uma conta, instancia um cliente tb
 	// Cliente titular = new Cliente(); 
 	
@@ -18,7 +18,7 @@ public class Conta {
 	}
 	*/
 	
-	boolean saca(double valor) {
+	public boolean saca(double valor) {
 		if(this.saldo < valor) {
 			return false;
 		} else {
@@ -27,7 +27,7 @@ public class Conta {
 		}
 	}
 	
-	void deposita(double quantidade) {
+	public void deposita(double quantidade) {
 		this.saldo += quantidade;
 	}
 	
@@ -38,7 +38,7 @@ public class Conta {
 	}
 	*/
 	
-	boolean transfere (Conta destino, double valor) {
+	public boolean transfere (Conta destino, double valor) {
 		boolean retirada = this.saca(valor);
 		if (retirada == false) {
 			// sem saldo! não sacou

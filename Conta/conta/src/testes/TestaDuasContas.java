@@ -1,4 +1,6 @@
-package conta;
+package testes;
+
+import conta.Conta;
 
 public class TestaDuasContas {
 
